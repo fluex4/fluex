@@ -1,0 +1,139 @@
+#about {
+    margin: 10px 20px;
+    /* height: 100%; */
+    width: 100vw;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+#about>div {
+    width: 90%;
+    max-width: 900px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(2px);
+}
+
+#about>div>h1 {
+    font-size: 3rem;
+    animation: flow-right linear;
+    animation-timeline: view(80% 80%);
+}
+
+#about>div>h2 {
+    font-size: 22px;
+}
+
+@keyframes flow-right {
+    from {
+        transform: translate(0px, 0px);
+    }
+
+    to {
+        transform: translate(40px, 0px);
+    }
+}
+
+.about-legend {
+    width: 100%;
+    /* max-width: 600px; */
+    /* width: calc(51px); */
+    padding: 0px 20px 0px 10px;
+    font-size: 30px;
+    overflow: hidden;
+
+}
+
+.about-fs {
+    padding: 15px;
+    border: hidden;
+    /* width: 100vw; */
+    /* max-width: 80%; */
+    border-radius: 15px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 400px;
+    /* height: 100px; */
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    /* background-image: url(resources/cat-code.jpeg);
+    background-size: cover;
+    background-position-x: 50%; */
+    position: relative;
+    border-radius: 15px;
+
+}
+
+.about-content>img {
+    position: absolute;
+    left: 105%;
+    top: 0px;
+    max-width: 400px;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.about-org {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 5%;
+    width: 100%;
+}
+
+.org-head,
+.org-name {
+    font-size: 15px;
+    font-style: bold;
+    font-family: "Montserrat";
+    font-weight: 600;
+    opacity: 1;
+}
+
+.org-second {
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+.about-cont-right {
+    width: 100%;
+    text-align: right;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 470px) {
+    #about {
+        margin: 0px;
+    }
+
+    /* #about>h1 {
+        font-size: 3rem;
+    } */
+    #about>div>h2,
+    h1 {
+        font-size: 1rem;
+    }
+
+    #about>div {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .about-content>img {
+        display: none;
+    }
+}

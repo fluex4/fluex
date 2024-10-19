@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+
+:root {
+    --primary-color: #212121;
+    --secondary-color: #424242;
+    --background-color: #000000;
+    --text-color: #e0e0e0;
+    --heading-color: #ffffff;
+    --border-color: #333333;
+    --link-color: #bb86fc;
+    --hover-color: #03dac6;
+    --error-color: #cf6679;
+    --success-color: #81c784;
+
+
+
+    --quartz: #ffffff;
+    --coal: #282828;
+
+    --silver: rgb(170, 170, 170);
+    --ruby: rgb(255, 63, 63);
+    --emerald: rgb(11, 194, 11);
+    --lapis: rgb(46, 46, 243);
+    --gold: gold;
+    --diamond: rgb(73, 182, 245);
+    --sky: cyan;
+    --lava: orange;
+    --pink: pink;
+    --cat: rgb(102, 60, 254);
+
+    --lowRed: rgb(221, 79, 79);
+    --lowBlue: rgb(70, 70, 230);
+    --lowGreen: rgb(72, 235, 72);
+    --lowCyan: rgb(76, 243, 243);
+    --lowYellow: rgb(247, 247, 65);
+}
+
+.alexandria-100 {
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.alexandria-200 {
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+.playwrite-de-grund-regular {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.playwrite-de-grund-light {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.open-sans-400 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.montserrat-400 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-600 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: var(--quartz);
+}
+
+*::selection {
+    background-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 10px 20px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+
+.skeleton {
+    opacity: .7;
+    animation: skeleton-loading 1s linear infinite alternate;
+
+}
+
+.skeleton-text {
+    position: relative;
+    top: 9px;
+    width: 100%;
+    height: .7em;
+    margin-bottom: .25rem;
+    border-radius: 4px;
+}
+
+.skeleton-text:last-child {
+    width: 80%;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 40%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 90%);
+
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 8px;
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body {
+    /* background-image: url(resources/bg.png);
+    background-position: center;
+    background-size: contain; */
+    /* height: 100vh;
+    width: 100vw; */
+    padding: 10px;
+    position: relative;
+
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+* {
+    z-index: 1;
+}
+
+.gloss {
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+
+@keyframes colors {
+    0% {
+        color: #FF2B2B;
+    }
+
+    10% {
+        color: #FF6EC7;
+
+    }
+
+    20% {
+
+        color: #FF00FF;
+    }
+
+    30% {
+        color: #A200FF;
+
+    }
+
+    40% {
+        color: #1B03A3;
+
+    }
+
+    50% {
+        color: #00FFFF;
+
+    }
+
+    60% {
+        color: #00FFCC;
+
+    }
+
+    70% {
+        color: #39FF14;
+
+    }
+
+    80% {
+        color: #FFFF33;
+
+    }
+
+    90% {
+        color: #FF5F1F;
+
+    }
+
+    100% {
+        color: white;
+
+    }
+}
+
+.getIn {
+    cursor: grab;
+    /* transform: translate(400px); */
+    animation: flowLeft2 ease;
+    animation-timeline: view(95% 1%);
+    /* transition: all 700ms ease; */
+}
+
+
+/* .box-hover {
+    transition: all 0.5s ease;
+}
+
+.box-hover:hover {
+    transition: all 0.5s ease;
+    transform: translateY(-2px);
+    box-shadow: 1px 1px solid white;
+} */

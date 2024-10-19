@@ -1,0 +1,246 @@
+/* #hero {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#par-effect {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.layer {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%; 
+} */
+
+#hero {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* background-image: radial-gradient(rgb(20, 20, 113), black 0%); */
+    /* background: linear-gradient(-45deg,
+            #4B9CD3,
+            #00BFFF,
+            #A7C6ED,
+            #A1C6E7,
+            #1E1A78,
+            #191970,
+            #007BA7); */
+    /* background: linear-gradient(-45deg,
+            black, rgb(29, 29, 103), black); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-size: 400% 400%; */
+    /* animation: sky-bg 4s ease infinite; */
+    backdrop-filter: blur(-1px);
+    /* border: 2px solid white; */
+    /* margin: 2px; */
+}
+
+#hero h2 {
+    font-size: 5rem;
+    /* animation: flowUp 800ms ease-out 0s 1; */
+}
+
+@keyframes sky-bg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+#dotsCanvas {
+    position: fixed;
+    background-color: transparent;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -10;
+}
+
+#dotsCanvas-back {
+
+    position: fixed;
+    background-color: transparent;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -10;
+
+}
+
+.stats {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.stat-box {
+    backdrop-filter: blur(2px);
+    min-width: 400px;
+    min-height: 150px;
+    border: 1px solid white;
+    animation: flowUp2 1s ease 0s 1;
+    border-radius: 10px;
+    /* background-color: transparent;    */
+    padding: 15px 10px 10px 15px;
+    font-size: 15px;
+    font-family: ubuntu;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    cursor: grab;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    z-index: 100;
+    transition: all 200ms ease;
+}
+
+/* 
+ .stat-box:hover {
+    transform: translateY(-2px); 
+} */
+#github-stat {
+    /* transform: translateY(-2px); */
+    transition: all 300ms;
+}
+
+#github-stat:hover {
+    box-shadow: 0px 0px 15px rgb(160, 28, 255);
+    transform: translate(4px 4px);
+
+}
+
+
+
+#leetcode-stat:hover {
+    transform: translate(4px 4px);
+    box-shadow: 0px 0px 15px rgb(244, 255, 28);
+}
+
+.ico {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.flex-align-side {
+    display: flex;
+    gap: 30px
+}
+
+.logo-stat {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border-radius: 50%;
+}
+
+.logo-stat>img {
+    width: 20px;
+    height: 20px;
+}
+
+#github-stat>.logo-stat {
+    background-color: rgb(255, 255, 255);
+}
+
+#leetcode-stat>.logo-stat {
+    background-color: rgba(240, 255, 75, 0.299);
+}
+
+/* .logo-stat:hover {
+    box-shadow: 0px 0px 15px rgb(160, 28, 255);
+} */
+
+.green {
+    color: var(--lowGreen);
+}
+
+.red {
+    color: var(--lowRed);
+}
+
+.yellow {
+    color: var(--lowYellow);
+}
+
+.blue {
+    color: var(--diamond);
+}
+
+.violet {
+    color: rgb(179, 130, 238);
+}
+
+#infos {
+    width: 100%;
+    height: 100%;
+    min-width: min-content;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 30px; */
+    cursor: grab;
+}
+
+.max-width-a {
+    max-width: 800px;
+    font-size: 21px;
+    padding: 0px 20px;
+}
+
+.left {
+    /* transform: translateX(-100px); */
+    position: absolute;
+    /* left: 2%; */
+    transform: translate(-25px, -10px);
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 570px) {
+    .stat-box {
+        min-height: 129px;
+        min-width: 280px;
+    }
+
+    .max-width-a {
+        font-size: medium;
+        padding: 0px;
+    }
+}
